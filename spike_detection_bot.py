@@ -23,7 +23,7 @@ def send_telegram_message(msg):
         print("Telegram error:", e)
 
 def fetch_price_volume(symbol):
-    url = f"https://www.nseindia.com/api/quote-equity?symbol={symbol}"
+    url = f"https://www.nseindia.com/get-quotes/equity?symbol={symbol}"
     headers = {
         "User-Agent": "Mozilla/5.0",
         "Accept": "application/json"
